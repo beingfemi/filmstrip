@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "filmstrip",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4321", "--directory", "/Users/femisoetan/Documents/iBuilt/filmstrip"],
+      "port": 4321
+    }
+  ]
+}

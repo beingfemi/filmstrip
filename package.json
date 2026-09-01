@@ -1,0 +1,16 @@
+{
+  "name": "filmstrip",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A horizontally-scrolling photo site. Drop JPEGs in photos-src/, run npm run photos, push.",
+  "type": "module",
+  "scripts": {
+    "photos": "node scripts/build-photos.mjs",
+    "demo": "node scripts/fetch-demo.mjs",
+    "dev": "npx --yes serve -l 4321 ."
+  },
+  "devDependencies": {
+    "exifr": "^7.1.3",
+    "sharp": "^0.35.4"
+  }
+}

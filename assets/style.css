@@ -1,0 +1,275 @@
+/* ---------------------------------------------------------------
+   Filmstrip — one long horizontal wall of photographs.
+   Landscape: the page scrolls sideways, images sized to the viewport
+   height. Portrait: everything stacks into an ordinary column.
+   --------------------------------------------------------------- */
+
+:root {
+  --img-size: 82vh;          /* the height every photo is printed at */
+  --baseline: 1.5rem;
+  --gap: calc(var(--baseline) / 2);
+
+  --paper: #fbfaf8;
+  --ink: #191817;
+  --muted: #6f6b66;
+  --accent: #b4531f;
+  --edge: rgba(25, 24, 23, 0.12);
+  --scrim: rgba(251, 250, 248, 0.94);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #121211;
+    --ink: #f3f1ed;
+    --muted: #9a948c;
+    --accent: #e8935e;
+    --edge: rgba(243, 241, 237, 0.16);
+    --scrim: rgba(18, 18, 17, 0.94);
+  }
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  height: 100%;
+  overflow: hidden;                    /* the body is the scroll container */
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-text-size-adjust: none;
+  scrollbar-width: thin;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body { scroll-behavior: auto; }
+  * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--edge);
+  text-underline-offset: 0.2em;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+a:hover,
+a:focus-visible { color: var(--accent); text-decoration-color: currentColor; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* --- the strip ------------------------------------------------- */
+
+.strip {
+  display: flex;
+  align-items: stretch;
+  height: calc(var(--img-size) + var(--baseline) * 2);
+  padding: 0 var(--gap);
+}
+
+.pane {
+  flex: 0 0 auto;
+  padding: var(--gap);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* --- intro ----------------------------------------------------- */
+
+.pane--intro {
+  width: 25rem;
+  max-width: 100%;
+  position: sticky;
+  left: 0;
+  justify-content: flex-start;
+  padding-top: 0;
+  /* drifts up a little as you scroll away from it — set by app.js */
+  transform: translateY(calc(var(--drift, 0) * -1.75rem));
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: calc(1 - var(--drift, 0) * 0.35);
+  z-index: 2;
+  background: linear-gradient(90deg, var(--paper) 78%, transparent);
+}
+
+.wordmark { font-size: 1rem; font-weight: 600; letter-spacing: -0.01em; }
+.intro p { margin-top: var(--gap); max-width: 34ch; }
+.intro { margin-top: var(--baseline); color: var(--muted); }
+.intro strong, .intro a { color: var(--ink); }
+
+.hint {
+  margin-top: var(--baseline);
+  font-size: 0.8125rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.hint kbd {
+  font: inherit;
+  border: 1px solid var(--edge);
+  border-radius: 4px;
+  padding: 0.05em 0.4em;
+  color: var(--ink);
+}
+
+/* --- photos ---------------------------------------------------- */
+
+.pane--photo { justify-content: flex-start; }
+
+.frame {
+  height: var(--img-size);
+  /* the aspect ratio is written onto each pane by the build step */
+  width: calc(var(--img-size) * var(--ratio, 0.667));
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--edge);
+  background-size: cover;
+  background-position: center;
+  cursor: zoom-in;
+  border: 0;
+  padding: 0;
+  display: block;
+  color: inherit;
+}
+
+.frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+.frame img.is-loaded { opacity: 1; }
+
+.caption {
+  margin-top: var(--gap);
+  font-size: 0.8125rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  max-width: calc(var(--img-size) * var(--ratio, 0.667));
+}
+.caption .frac { font-variant-numeric: diagonal-fractions; }
+.caption .caps { font-size: 0.9em; letter-spacing: 0.04em; }
+
+/* --- end card -------------------------------------------------- */
+
+.pane--end {
+  width: 16rem;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.pane--end p + p { margin-top: var(--gap); }
+
+/* --- scroll progress ------------------------------------------- */
+
+.progress {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--edge);
+  z-index: 5;
+  pointer-events: none;
+}
+.progress span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: var(--accent);
+  transform-origin: 0 50%;
+  transform: scaleX(var(--progress, 0));
+}
+
+/* --- lightbox -------------------------------------------------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: var(--scrim);
+  backdrop-filter: blur(18px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  padding: var(--baseline);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s;
+}
+.lightbox[open], .lightbox.is-open { opacity: 1; visibility: visible; }
+
+.lightbox img {
+  max-width: 100%;
+  max-height: calc(100vh - var(--baseline) * 5);
+  object-fit: contain;
+  border-radius: 4px;
+  cursor: zoom-out;
+}
+.lightbox .caption { margin: 0; text-align: center; max-width: 60ch; }
+
+.lightbox__close,
+.lightbox__nav {
+  position: absolute;
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: color 0.2s ease;
+}
+.lightbox__close:hover,
+.lightbox__nav:hover { color: var(--ink); }
+.lightbox__close { top: var(--gap); right: var(--gap); }
+.lightbox__nav--prev { left: var(--gap); top: 50%; transform: translateY(-50%); }
+.lightbox__nav--next { right: var(--gap); top: 50%; transform: translateY(-50%); }
+
+/* --- portrait / narrow: stack it all up ------------------------ */
+
+@media (max-width: 46rem), (orientation: portrait) {
+  html { overflow: auto; height: auto; }
+  body {
+    display: block;
+    height: auto;
+    overflow: visible;
+    padding: var(--baseline) 0;
+  }
+  .strip { display: block; height: auto; padding: 0 var(--baseline); }
+  .pane { padding: 0 0 var(--baseline); width: auto; }
+  .pane--intro {
+    position: static;
+    width: auto;
+    transform: none;
+    opacity: 1;
+    background: none;
+    padding-bottom: var(--baseline);
+  }
+  .hint { display: none; }
+  .frame,
+  .caption { width: 100%; max-width: 100%; }
+  .frame { height: auto; aspect-ratio: var(--ratio, 0.667); }
+  .pane--end { width: auto; }
+  .progress { display: none; }
+  .lightbox__nav { font-size: 2rem; }
+}

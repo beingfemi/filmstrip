@@ -1,0 +1,15 @@
+{
+  "title": "Filmstrip",
+  "wordmark": "photos.",
+  "wordmarkLink": { "label": "femisoetan.com", "href": "https://github.com/beingfemi" },
+  "description": "A horizontally-scrolling home for the photographs I'm proudest of.",
+  "intro": [
+    "Femi Soetan is a designer. Somewhere between the shutter and the hard drive, most photographs get lost.",
+    "This is the small room where the ones worth keeping hang on the wall. Scroll sideways."
+  ],
+  "links": [
+    { "label": "Instagram", "href": "https://instagram.com/" },
+    { "label": "GitHub", "href": "https://github.com/beingfemi" }
+  ],
+  "footer": "Built with Filmstrip"
+}

@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+.vercel/
+# Full-resolution originals stay local — only the web-sized versions in img/ are committed.
+photos-src/*
+!photos-src/.gitkeep
