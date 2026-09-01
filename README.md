@@ -4,7 +4,7 @@ A photo site that scrolls sideways. One long wall of pictures, each one printed 
 the height of your window, with its camera settings underneath. On a phone it
 folds down into an ordinary column.
 
-**Live:** _(added after the first deploy)_
+**Live:** https://filmstrip-ten.vercel.app
 
 ## Adding your photos
 
