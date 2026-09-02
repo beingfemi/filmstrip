@@ -7,10 +7,18 @@
       mapping. The doubling is deliberate — one notch of the wheel should
       cover ground — and not preventing the default keeps native inertia.
    2. Publish the scroll position as --scroll-delta so CSS can drift the
-      intro pane upward as you move away from it. */
+      intro pane upward and fade it out as you move away from it. */
 (() => {
   const scroller = document.body;
-  const publish = () => scroller.style.setProperty('--scroll-delta', String(scroller.scrollLeft));
+  const intro = document.querySelector('.pane--intro');
+  const FADE_OVER = 300; // px of sideways scroll; matches the CSS
+
+  const publish = () => {
+    const x = scroller.scrollLeft;
+    scroller.style.setProperty('--scroll-delta', String(x));
+    // Once it's invisible, stop it swallowing clicks meant for the photos.
+    if (intro) intro.classList.toggle('is-gone', x >= FADE_OVER);
+  };
 
   publish();
 

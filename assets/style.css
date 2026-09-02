@@ -8,6 +8,7 @@
   --img-size: 85vh;          /* the height every photo is printed at */
   --baseline: 1.5rem;
   --gap: calc(var(--baseline) / 2);
+  --fade-over: 300;          /* px of scroll before the intro is fully gone */
 
   --paper: #fbfaf8;
   --ink: #191817;
@@ -66,7 +67,10 @@ a:focus-visible { color: var(--accent); text-decoration-color: currentColor; }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-/* --- the strip ------------------------------------------------- */
+/* --- the strip -------------------------------------------------
+   Every pane carries the same padding, and the strip adds the same
+   again at each end — so the space before the first photo, between
+   any two photos, and after the last one is identical. */
 
 .strip {
   display: flex;
@@ -93,12 +97,17 @@ a:focus-visible { color: var(--accent); text-decoration-color: currentColor; }
   justify-content: flex-start;
   padding-top: 0;
   z-index: 2;
-  /* Rises by up to 2rem across the first 300px of sideways scroll.
+  /* Rises by up to 2rem and fades right out across the first 300px of
+     sideways scroll, so it never sits on top of a photograph.
      --scroll-delta is the unitless scrollLeft, published by app.js. */
   transform: translateY(
-    calc(max(min(var(--scroll-delta, 0), 300) / 300 * var(--baseline) * -2, -2rem))
+    calc(max(min(var(--scroll-delta, 0), var(--fade-over)) / var(--fade-over) * var(--baseline) * -2, -2rem))
   );
+  opacity: calc(1 - min(var(--scroll-delta, 0), var(--fade-over)) / var(--fade-over));
 }
+
+/* Invisible, so it shouldn't be catching clicks or the tab key. */
+.pane--intro.is-gone { pointer-events: none; visibility: hidden; }
 
 .wordmark { font-size: 1rem; font-weight: 600; letter-spacing: -0.01em; }
 .intro { margin-top: var(--baseline); color: var(--muted); }
@@ -142,16 +151,6 @@ a:focus-visible { color: var(--accent); text-decoration-color: currentColor; }
 .caption .frac { font-variant-numeric: diagonal-fractions; }
 .caption .caps { font-size: 0.9em; letter-spacing: 0.04em; }
 
-/* --- end card -------------------------------------------------- */
-
-.pane--end {
-  width: 16rem;
-  justify-content: center;
-  color: var(--muted);
-  font-size: 0.8125rem;
-}
-.pane--end p + p { margin-top: var(--gap); }
-
 /* --- portrait / narrow: stack it all up ------------------------ */
 
 @media (max-width: 46rem), (orientation: portrait) {
@@ -167,11 +166,13 @@ a:focus-visible { color: var(--accent); text-decoration-color: currentColor; }
   .pane--intro {
     position: static;
     width: auto;
-    transform: none;          /* no drift once it's a plain column */
+    /* it's a plain column here — no drifting, no fading */
+    transform: none;
+    opacity: 1;
     padding-bottom: var(--baseline);
   }
+  .pane--intro.is-gone { pointer-events: auto; visibility: visible; }
   .frame,
   .caption { width: 100%; max-width: 100%; }
   .frame { height: auto; aspect-ratio: var(--ratio, 0.667); }
-  .pane--end { width: auto; }
 }

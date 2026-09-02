@@ -99,8 +99,6 @@ async function renderPage(photos) {
     ? `<meta property="og:image" content="${photos[0].src}">`
     : '';
 
-  const count = photos.length === 1 ? '1 photograph.' : `${photos.length} photographs.`;
-
   const html = template
     .replaceAll('{{TITLE}}', escapeHtml(config.title ?? 'Filmstrip'))
     .replaceAll('{{DESCRIPTION}}', escapeHtml(config.description ?? ''))
@@ -108,9 +106,7 @@ async function renderPage(photos) {
     .replaceAll('{{INTRO}}', intro)
     .replaceAll('{{LINKS}}', links)
     .replaceAll('{{OG_IMAGE}}', ogImage)
-    .replaceAll('{{PHOTOS}}', photos.map(paneHtml).join('\n\n'))
-    .replaceAll('{{COUNT}}', escapeHtml(count))
-    .replaceAll('{{FOOTER}}', escapeHtml(config.footer ?? ''));
+    .replaceAll('{{PHOTOS}}', photos.map(paneHtml).join('\n\n'));
 
   await writeFile(join(ROOT, 'index.html'), html);
 }
