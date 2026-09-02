@@ -76,7 +76,7 @@ a:focus-visible { color: var(--accent); }
 .strip {
   display: flex;
   align-items: stretch;
-  height: var(--img-size);
+  height: calc(var(--img-size) + var(--baseline));
   padding-bottom: var(--baseline);
 }
 
