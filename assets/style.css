@@ -98,7 +98,6 @@ a:focus-visible { color: var(--accent); }
   position: sticky;
   left: 0;
   justify-content: flex-start;
-  padding-top: 0;
   z-index: 2;
   /* --scroll-delta is the unitless scrollLeft, published by app.js */
   transform: translateY(
