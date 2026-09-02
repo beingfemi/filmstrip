@@ -1,319 +1,156 @@
 {
-  "generated": "2026-09-02T04:37:13.234Z",
+  "generated": "2026-09-02T04:46:37.230Z",
   "photos": [
     {
-      "slug": "001",
-      "width": 960,
-      "height": 643,
-      "ratio": 1.493,
-      "src": "img/001-960.jpg",
-      "srcset": "img/001-640.jpg 640w, img/001-960.jpg 960w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBv/EAB0QAAICAgMBAAAAAAAAAAAAAAECABEDBSFBUXH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFhEBAQEAAAAAAAAAAAAAAAAAACFR/9oADAMBAAIRAxEAPwCuPJqFW2Yj7GL6hxw0yFn2FkdwTH//2Q==",
-      "caption": "Matt Flores · CC0 · demo photo",
-      "sidecarCaption": "Matt Flores · CC0 · demo photo",
-      "credit": {
-        "author": "Matt Flores",
-        "license": "CC0",
-        "source": "https://stocksnap.io/photo/mountains-landscape-52TDQG1GNL"
-      },
-      "alt": "Mountains Landscape",
-      "taken": null,
-      "exif": {
-        "camera": null,
-        "lens": null,
-        "aperture": null,
-        "shutter": null,
-        "focal": null,
-        "iso": null,
-        "taken": null
-      }
-    },
-    {
-      "slug": "002",
-      "width": 960,
-      "height": 720,
-      "ratio": 1.3333,
-      "src": "img/002-960.jpg",
-      "srcset": "img/002-640.jpg 640w, img/002-960.jpg 960w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgME/8QAHxAAAgEEAgMAAAAAAAAAAAAAAQIDAAURMRJBBBNx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAVEQEBAAAAAAAAAAAAAAAAAAAAMf/aAAwDAQACEQMRAD8AxWsOrq0QYMOgd0kiumBx8lPVgbJ3RiORlgDKcEd1KWeR88mJ+1FI/9k=",
-      "caption": "Kristoffer Fredriksson · CC0 · demo photo",
-      "sidecarCaption": "Kristoffer Fredriksson · CC0 · demo photo",
-      "credit": {
-        "author": "Kristoffer Fredriksson",
-        "license": "CC0",
-        "source": "https://stocksnap.io/photo/mountain-landscape-S2JLQ3IWFS"
-      },
-      "alt": "Mountain Landscape",
-      "taken": null,
-      "exif": {
-        "camera": null,
-        "lens": null,
-        "aperture": null,
-        "shutter": null,
-        "focal": null,
-        "iso": null,
-        "taken": null
-      }
-    },
-    {
-      "slug": "003",
-      "width": 960,
-      "height": 640,
-      "ratio": 1.5,
-      "src": "img/003-960.jpg",
-      "srcset": "img/003-640.jpg 640w, img/003-960.jpg 960w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQMG/8QAHxAAAgICAQUAAAAAAAAAAAAAAQIABAMREgUGIjFR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAMAwEAAhEDEQA/AE6nXMbUS7sOQWF2+4matxU+X2ZzG7BNBjqRcnfuKoDX/9k=",
-      "caption": "Jay Mantri · CC0 · demo photo",
-      "sidecarCaption": "Jay Mantri · CC0 · demo photo",
-      "credit": {
-        "author": "Jay Mantri",
-        "license": "CC0",
-        "source": "https://stocksnap.io/photo/forest-fog-123D7AD57C"
-      },
-      "alt": "Forest Fog",
-      "taken": null,
-      "exif": {
-        "camera": null,
-        "lens": null,
-        "aperture": null,
-        "shutter": null,
-        "focal": null,
-        "iso": null,
-        "taken": null
-      }
-    },
-    {
-      "slug": "004",
-      "width": 960,
-      "height": 640,
-      "ratio": 1.5,
-      "src": "img/004-960.jpg",
-      "srcset": "img/004-640.jpg 640w, img/004-960.jpg 960w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAIBAAAQMCBwAAAAAAAAAAAAAAAQACAwQRBQYTMjNBUf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAEREv/aAAwDAQACEQMRAD8AtnGKRo5AgmzBQxtuZLnwLB6j7bijc4ntNI1L/9k=",
-      "caption": "Jay Mantri · CC0 · demo photo",
-      "sidecarCaption": "Jay Mantri · CC0 · demo photo",
-      "credit": {
-        "author": "Jay Mantri",
-        "license": "CC0",
-        "source": "https://stocksnap.io/photo/forest-fog-B407C49939"
-      },
-      "alt": "Forest Fog",
-      "taken": null,
-      "exif": {
-        "camera": null,
-        "lens": null,
-        "aperture": null,
-        "shutter": null,
-        "focal": null,
-        "iso": null,
-        "taken": null
-      }
-    },
-    {
-      "slug": "005",
-      "width": 960,
-      "height": 640,
-      "ratio": 1.5,
-      "src": "img/005-960.jpg",
-      "srcset": "img/005-640.jpg 640w, img/005-960.jpg 960w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAMF/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIABBEhA1EiI0H/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABYRAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEQMRAD8AxKbqr7UtnqVtcmWUopUjuErMQzEHBA1HVieVPZ5b+yJaYTiv/9k=",
-      "caption": "Verne Ho · CC0 · demo photo",
-      "sidecarCaption": "Verne Ho · CC0 · demo photo",
-      "credit": {
-        "author": "Verne Ho",
-        "license": "CC0",
-        "source": "https://stocksnap.io/photo/cityscape-skyline-KDOIQSH4ZW"
-      },
-      "alt": "Cityscape Skyline",
-      "taken": null,
-      "exif": {
-        "camera": null,
-        "lens": null,
-        "aperture": null,
-        "shutter": null,
-        "focal": null,
-        "iso": null,
-        "taken": null
-      }
-    },
-    {
-      "slug": "006",
-      "width": 1024,
-      "height": 685,
-      "ratio": 1.4949,
-      "src": "img/006-1024.jpg",
-      "srcset": "img/006-640.jpg 640w, img/006-1024.jpg 1024w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwH/xAAWEAEBAQAAAAAAAAAAAAAAAAACAAH/xAAUAQEAAAAAAAAAAAAAAAAAAAAF/8QAFREBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhEDEQA/AHWxpVUTjISj/9k=",
-      "caption": "Unknown · CC0 · demo photo",
-      "sidecarCaption": "Unknown · CC0 · demo photo",
-      "credit": {
-        "author": "Unknown",
-        "license": "CC0",
-        "source": "https://www.rawpixel.com/image/5913109/photo-image-public-domain-fabric-free"
-      },
-      "alt": "Free desert dunes sand fabric",
-      "taken": null,
-      "exif": {
-        "camera": null,
-        "lens": null,
-        "aperture": null,
-        "shutter": null,
-        "focal": null,
-        "iso": null,
-        "taken": null
-      }
-    },
-    {
-      "slug": "007",
-      "width": 1024,
-      "height": 576,
-      "ratio": 1.7778,
-      "src": "img/007-1024.jpg",
-      "srcset": "img/007-640.jpg 640w, img/007-1024.jpg 1024w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQF/8QAGhAAAwADAQAAAAAAAAAAAAAAAAIRAwQFof/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAXEQADAQAAAAAAAAAAAAAAAAAAARES/9oADAMBAAIRAxEAPwCLD2thFlor97LJPTJQNxyhrP/Z",
-      "caption": "Unknown · CC0 · demo photo",
-      "sidecarCaption": "Unknown · CC0 · demo photo",
-      "credit": {
-        "author": "Unknown",
-        "license": "CC0",
-        "source": "https://www.rawpixel.com/image/3302593/free-photo-image-desert-nature-night"
-      },
-      "alt": "Rolling desert dunes covered fog",
-      "taken": null,
-      "exif": {
-        "camera": null,
-        "lens": null,
-        "aperture": null,
-        "shutter": null,
-        "focal": null,
-        "iso": null,
-        "taken": null
-      }
-    },
-    {
-      "slug": "008",
-      "width": 960,
-      "height": 641,
-      "ratio": 1.4977,
-      "src": "img/008-960.jpg",
-      "srcset": "img/008-640.jpg 640w, img/008-960.jpg 960w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQT/xAAeEAACAQQDAQAAAAAAAAAAAAABAgMABBExBQYTUf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAZEQABBQAAAAAAAAAAAAAAAAAAAQIRQXH/2gAMAwEAAhEDEQA/ACuv3MFtK3srMTrFI3PPyejCJAFH3dG9ejR7oMy5I1V/I20JuSTGMndEOpQ0/9k=",
-      "caption": "Tim Sullivan · CC0 · demo photo",
-      "sidecarCaption": "Tim Sullivan · CC0 · demo photo",
-      "credit": {
-        "author": "Tim Sullivan",
-        "license": "CC0",
-        "source": "https://stocksnap.io/photo/lake-reflection-VJDHGHXWF1"
-      },
-      "alt": "Lake Reflection",
-      "taken": null,
-      "exif": {
-        "camera": null,
-        "lens": null,
-        "aperture": null,
-        "shutter": null,
-        "focal": null,
-        "iso": null,
-        "taken": null
-      }
-    },
-    {
-      "slug": "009",
-      "width": 960,
-      "height": 640,
-      "ratio": 1.5,
-      "src": "img/009-960.jpg",
-      "srcset": "img/009-640.jpg 640w, img/009-960.jpg 960w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAhEAABAwMEAwAAAAAAAAAAAAABAAQRAgMTBRQiMUFRcf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwAGN7C/ogSahEe0r3jdmIKmagb+z9VupUjL15QX/9k=",
-      "caption": "Free Nature Stock · CC0 · demo photo",
-      "sidecarCaption": "Free Nature Stock · CC0 · demo photo",
-      "credit": {
-        "author": "Free Nature Stock",
-        "license": "CC0",
-        "source": "https://stocksnap.io/photo/bird-wildlife-6VWR9PLM7R"
-      },
-      "alt": "Bird Wildlife",
-      "taken": null,
-      "exif": {
-        "camera": null,
-        "lens": null,
-        "aperture": null,
-        "shutter": null,
-        "focal": null,
-        "iso": null,
-        "taken": null
-      }
-    },
-    {
-      "slug": "010",
-      "width": 960,
-      "height": 855,
-      "ratio": 1.1228,
-      "src": "img/010-960.jpg",
-      "srcset": "img/010-640.jpg 640w, img/010-960.jpg 960w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAOABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAEF/8QAHBAAAgIDAQEAAAAAAAAAAAAAAQIAEQMEEhMx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8Ay0186C0fmvsdrtl8+i7PcT5h1PQBkLhRyoqDdLH/2Q==",
-      "caption": "Stephen Rahn · CC0 · demo photo",
-      "sidecarCaption": "Stephen Rahn · CC0 · demo photo",
-      "credit": {
-        "author": "Stephen Rahn",
-        "license": "CC0",
-        "source": "https://stocksnap.io/photo/bird-wildlife-NSH7ABHENA"
-      },
-      "alt": "Bird Wildlife",
-      "taken": null,
-      "exif": {
-        "camera": null,
-        "lens": null,
-        "aperture": null,
-        "shutter": null,
-        "focal": null,
-        "iso": null,
-        "taken": null
-      }
-    },
-    {
-      "slug": "011",
-      "width": 960,
-      "height": 640,
-      "ratio": 1.5,
-      "src": "img/011-960.jpg",
-      "srcset": "img/011-640.jpg 640w, img/011-960.jpg 960w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUG/8QAHRAAAgEFAQEAAAAAAAAAAAAAAQIAAwQFETFRof/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAREv/aAAwDAQACEQMRAD8AIlVbgEp9jMTj1vKxLtpF6PZnqLEPoEgSzhqrpdKFYjfZT0pFmN//2Q==",
-      "caption": "Travel Photographer · CC0 · demo photo",
-      "sidecarCaption": "Travel Photographer · CC0 · demo photo",
-      "credit": {
-        "author": "Travel Photographer",
-        "license": "CC0",
-        "source": "https://stocksnap.io/photo/city-windows-FXUKMM5OVS"
-      },
-      "alt": "City Windows",
-      "taken": null,
-      "exif": {
-        "camera": null,
-        "lens": null,
-        "aperture": null,
-        "shutter": null,
-        "focal": null,
-        "iso": null,
-        "taken": null
-      }
-    },
-    {
-      "slug": "012",
-      "width": 960,
-      "height": 1280,
+      "slug": "dscf3078-nw",
+      "width": 4972,
+      "height": 6629,
       "ratio": 0.75,
-      "src": "img/012-960.jpg",
-      "srcset": "img/012-640.jpg 640w, img/012-960.jpg 960w",
-      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBv/EAB8QAAIBBAIDAAAAAAAAAAAAAAECAAMEEiEFUSIjYf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAEhQf/aAAwDAQACEQMRAD8A1tYAIBJnRmQhWxPYj7gg66kzDOlitTH6ICK903s0PHUZx5NW3JbuEJPUy6//2Q==",
-      "caption": "Studio 7042 · CC0 · demo photo",
-      "sidecarCaption": "Studio 7042 · CC0 · demo photo",
-      "credit": {
-        "author": "Studio 7042",
-        "license": "CC0",
-        "source": "https://stocksnap.io/photo/mirror-livingroom-JRHSFSKQZQ"
-      },
-      "alt": "Mirror Livingroom",
+      "src": "img/dscf3078-nw-2400.jpg",
+      "srcset": "img/dscf3078-nw-640.jpg 640w, img/dscf3078-nw-1200.jpg 1200w, img/dscf3078-nw-2000.jpg 2000w, img/dscf3078-nw-2400.jpg 2400w",
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgb/xAAeEAACAgICAwAAAAAAAAAAAAABAgADERIxQSEiUf/EABYBAQEBAAAAAAAAAAAAAAAAAAMCBP/EABgRAQEAAwAAAAAAAAAAAAAAAAABAhEh/9oADAMBAAIRAxEAPwDmtckAcmKsXDEc4ldK12VjJIfoxdyoazqPYN5MPbRYnrtavBHc0rEo4+whKo8b1//Z",
+      "caption": "FUJIFILM X100VI, ƒ2.5, 1/80 sec, 23.0mm, ISO 100",
+      "sidecarCaption": null,
+      "credit": null,
+      "alt": "Photograph",
+      "taken": "2026-08-15T08:07:39.000Z",
+      "exif": {
+        "camera": "FUJIFILM X100VI",
+        "lens": "23 mm f/2",
+        "aperture": "2.5",
+        "shutter": "1/80",
+        "focal": "23.0",
+        "iso": 100,
+        "taken": "2026-08-15T08:07:39.000Z"
+      }
+    },
+    {
+      "slug": "dscf1009-1",
+      "width": 4576,
+      "height": 6102,
+      "ratio": 0.7499,
+      "src": "img/dscf1009-1-2400.jpg",
+      "srcset": "img/dscf1009-1-640.jpg 640w, img/dscf1009-1-1200.jpg 1200w, img/dscf1009-1-2000.jpg 2000w, img/dscf1009-1-2400.jpg 2400w",
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVABADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMBBv/EACAQAAICAQMFAAAAAAAAAAAAAAECAAMRBBMhEjFBUWH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQEAAgMAAAAAAAAAAAAAAAAAEUEBITH/2gAMAwEAAhEDEQA/AOVWss4UcZ8zb6DS5UkH6JTTnfuCoAMc8xrLBu9OAMepLajUpaNzW7OO4EizFmJMRFmeP//Z",
+      "caption": "FUJIFILM X100VI, ƒ4, 1/200 sec, 23.0mm, ISO 100",
+      "sidecarCaption": null,
+      "credit": null,
+      "alt": "Photograph",
+      "taken": "2026-07-17T21:31:30.000Z",
+      "exif": {
+        "camera": "FUJIFILM X100VI",
+        "lens": "23 mm f/2",
+        "aperture": "4",
+        "shutter": "1/200",
+        "focal": "23.0",
+        "iso": 100,
+        "taken": "2026-07-17T21:31:30.000Z"
+      }
+    },
+    {
+      "slug": "dscf1037",
+      "width": 5152,
+      "height": 7728,
+      "ratio": 0.6667,
+      "src": "img/dscf1037-2400.jpg",
+      "srcset": "img/dscf1037-640.jpg 640w, img/dscf1037-1200.jpg 1200w, img/dscf1037-2000.jpg 2000w, img/dscf1037-2400.jpg 2400w",
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYABADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAQP/xAAgEAABBAICAwEAAAAAAAAAAAABAAIEEQMSBTEiUWFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/xAAYEQADAQEAAAAAAAAAAAAAAAAAAhEBA//aAAwDAQACEQMRAD8AW4kbgssn0qLo3xToj5EetcN/i7u5GXsGjDZ7pCvshNzy0aGdjh1SwNbts0eRQhMCn//Z",
+      "caption": "FUJIFILM X100VI, ƒ10, 1/250 sec, 23.0mm, ISO 500",
+      "sidecarCaption": null,
+      "credit": null,
+      "alt": "Photograph",
+      "taken": "2025-12-29T22:08:47.000Z",
+      "exif": {
+        "camera": "FUJIFILM X100VI",
+        "lens": null,
+        "aperture": "10",
+        "shutter": "1/250",
+        "focal": "23.0",
+        "iso": 500,
+        "taken": "2025-12-29T22:08:47.000Z"
+      }
+    },
+    {
+      "slug": "img_1272",
+      "width": 6000,
+      "height": 4000,
+      "ratio": 1.5,
+      "src": "img/img_1272-2400.jpg",
+      "srcset": "img/img_1272-640.jpg 640w, img/img_1272-1200.jpg 1200w, img/img_1272-2000.jpg 2000w, img/img_1272-2400.jpg 2400w",
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAALABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAdEAEAAgICAwAAAAAAAAAAAAABAgMABBEhIjFB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJo7saNSU/aHzBhuRuqFfLIxWlMCiTy94H//2Q==",
+      "caption": "Canon EOS Rebel SL3, ƒ5.6, 1/250 sec, 48.0mm, ISO 100",
+      "sidecarCaption": null,
+      "credit": null,
+      "alt": "Photograph",
+      "taken": "2024-12-15T07:19:59.000Z",
+      "exif": {
+        "camera": "Canon EOS Rebel SL3",
+        "lens": "EF-S18-55mm f/4-5.6 IS STM",
+        "aperture": "5.6",
+        "shutter": "1/250",
+        "focal": "48.0",
+        "iso": 100,
+        "taken": "2024-12-15T07:19:59.000Z"
+      }
+    },
+    {
+      "slug": "dscf0124",
+      "width": 7728,
+      "height": 5152,
+      "ratio": 1.5,
+      "src": "img/dscf0124-2400.jpg",
+      "srcset": "img/dscf0124-640.jpg 640w, img/dscf0124-1200.jpg 1200w, img/dscf0124-2000.jpg 2000w, img/dscf0124-2400.jpg 2400w",
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAALABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQQFBv/EAB4QAAIBAwUAAAAAAAAAAAAAAAACAQMEEQUiMkFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAZEQEAAgMAAAAAAAAAAAAAAAABAAIDETH/2gAMAwEAAhEDEQA/AI1C8pLzgcXU7NI3LkzWZ9D0FruUMicn/9k=",
+      "caption": "FUJIFILM X100VI, ƒ7.1, 1/40 sec, 23.0mm, ISO 500",
+      "sidecarCaption": null,
+      "credit": null,
+      "alt": "Photograph",
+      "taken": "2024-01-05T03:36:29.000Z",
+      "exif": {
+        "camera": "FUJIFILM X100VI",
+        "lens": null,
+        "aperture": "7.1",
+        "shutter": "1/40",
+        "focal": "23.0",
+        "iso": 500,
+        "taken": "2024-01-05T03:36:29.000Z"
+      }
+    },
+    {
+      "slug": "1",
+      "width": 4320,
+      "height": 5760,
+      "ratio": 0.75,
+      "src": "img/1-2400.jpg",
+      "srcset": "img/1-640.jpg 640w, img/1-1200.jpg 1200w, img/1-2000.jpg 2000w, img/1-2400.jpg 2400w",
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVABADASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAgEAACAgICAgMAAAAAAAAAAAABAgMRAAQGEiFBBSJR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAD/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oADAMBAAIRAxEAPwBOtyXYF9qJY+TjJuRSF1cHwvr9zN0filll6yydVr1iG0QzP0k+oNDDcqXYZ2R7oHIM1MaAF4YZmT//2Q==",
+      "caption": "",
+      "sidecarCaption": null,
+      "credit": null,
+      "alt": "Photograph",
+      "taken": null,
+      "exif": {
+        "camera": null,
+        "lens": null,
+        "aperture": null,
+        "shutter": null,
+        "focal": null,
+        "iso": null,
+        "taken": null
+      }
+    },
+    {
+      "slug": "10",
+      "width": 4320,
+      "height": 5760,
+      "ratio": 0.75,
+      "src": "img/10-2400.jpg",
+      "srcset": "img/10-640.jpg 640w, img/10-1200.jpg 1200w, img/10-2000.jpg 2000w, img/10-2400.jpg 2400w",
+      "lqip": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EAB8QAAICAgIDAQAAAAAAAAAAAAECAAMEEQUhBhITQv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEBAQEBAAAAAAAAAAAAAAAAABEhQf/aAAwDAQACEQMRAD8Afnu1WKTWwRj+jE4N7W4Ra1wxB1uReRWsaK0Ldb3IOFvC/Wt+9jYEiYqrvIlHxTrsnUyOPPrY+oQjwP/Z",
+      "caption": "",
+      "sidecarCaption": null,
+      "credit": null,
+      "alt": "Photograph",
       "taken": null,
       "exif": {
         "camera": null,
