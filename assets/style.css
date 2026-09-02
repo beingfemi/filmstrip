@@ -109,11 +109,10 @@ a:focus-visible { color: var(--accent); }
 .wordmark { font-size: 1rem; font-weight: 600; }
 
 .intro {
-  margin-top: var(--baseline);
   /* Goes negative past --fade-over; the browser clamps opacity at 0. */
   opacity: calc((var(--fade-over) - var(--scroll-delta, 0)) / var(--fade-over));
 }
-.intro p { margin-top: var(--gap); }
+.intro p { margin-bottom: var(--gap); }
 
 /* Invisible, so it shouldn't be catching clicks or the tab key. */
 .intro.is-gone { pointer-events: none; visibility: hidden; }
