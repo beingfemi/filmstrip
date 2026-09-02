@@ -123,6 +123,7 @@ a:focus-visible { color: var(--accent); }
 
 .frame {
   height: var(--img-size);
+  flex-shrink: 0;
   /* the aspect ratio is written onto each pane by the build step */
   width: calc(var(--img-size) * var(--ratio, 0.667));
   border-radius: 4px;
@@ -145,6 +146,7 @@ a:focus-visible { color: var(--accent); }
 .frame img.is-loaded { opacity: 1; }
 
 .caption {
+  flex-shrink: 0;
   margin-bottom: var(--gap);
   max-width: calc(var(--img-size) * var(--ratio, 0.667));
 }
