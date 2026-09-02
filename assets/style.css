@@ -68,15 +68,15 @@ a:focus-visible { color: var(--accent); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
 /* --- the strip -------------------------------------------------
-   Every pane carries the same padding, and the strip adds the same
-   again at each end — so the space before the first photo, between
-   any two photos, and after the last one is identical. */
+   The strip has no padding of its own: every gutter comes from the
+   panes, which carry an even half-baseline on all four sides. So the
+   outer edges are half a baseline and the gap between two photos is a
+   full one — the edges are deliberately tighter than the inner gaps. */
 
 .strip {
   display: flex;
   align-items: stretch;
-  height: calc(var(--img-size) + var(--baseline) * 2);
-  padding: 0 var(--gap);
+  padding-bottom: var(--baseline);
 }
 
 .pane {
@@ -97,7 +97,7 @@ a:focus-visible { color: var(--accent); }
   max-width: 100%;
   position: sticky;
   left: 0;
-  justify-content: flex-start;
+  align-self: flex-start;
   z-index: 2;
   /* --scroll-delta is the unitless scrollLeft, published by app.js */
   transform: translateY(
@@ -144,7 +144,7 @@ a:focus-visible { color: var(--accent); }
 .frame img.is-loaded { opacity: 1; }
 
 .caption {
-  margin-top: var(--gap);
+  margin-bottom: var(--gap);
   max-width: calc(var(--img-size) * var(--ratio, 0.667));
 }
 .caption .frac { font-variant-numeric: diagonal-fractions; }
@@ -157,15 +157,13 @@ a:focus-visible { color: var(--accent); }
     display: block;
     height: auto;
     overflow: visible;
-    padding: var(--baseline) 0;
   }
-  .strip { display: block; height: auto; padding: 0 var(--baseline); }
-  .pane { padding: 0 0 var(--baseline); width: auto; }
+  .strip { display: block; height: auto; padding: 0 0 var(--baseline); }
+  .pane { width: auto; }
   .pane--intro {
     position: static;
     width: auto;
     transform: none;          /* it's a plain column here — no drifting */
-    padding-bottom: var(--baseline);
   }
   .intro { opacity: 1; }      /* and no fading */
   .intro.is-gone { pointer-events: auto; visibility: visible; }
