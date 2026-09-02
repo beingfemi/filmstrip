@@ -37,7 +37,7 @@ html {
   overflow: hidden;                    /* the body is the scroll container */
   background: var(--paper);
   color: var(--ink);
-  font: 400 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  font: 400 80%/1.5 system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-text-size-adjust: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -106,14 +106,14 @@ a:focus-visible { color: var(--accent); }
   );
 }
 
-.wordmark { font-size: 1rem; font-weight: 600; letter-spacing: -0.01em; }
+.wordmark { font-size: 1rem; font-weight: 600; }
 
 .intro {
   margin-top: var(--baseline);
   /* Goes negative past --fade-over; the browser clamps opacity at 0. */
   opacity: calc((var(--fade-over) - var(--scroll-delta, 0)) / var(--fade-over));
 }
-.intro p { margin-top: var(--gap); max-width: 34ch; }
+.intro p { margin-top: var(--gap); }
 
 /* Invisible, so it shouldn't be catching clicks or the tab key. */
 .intro.is-gone { pointer-events: none; visibility: hidden; }
@@ -147,12 +147,9 @@ a:focus-visible { color: var(--accent); }
 
 .caption {
   margin-top: var(--gap);
-  font-size: 0.8125rem;
-  font-variant-numeric: tabular-nums;
   max-width: calc(var(--img-size) * var(--ratio, 0.667));
 }
 .caption .frac { font-variant-numeric: diagonal-fractions; }
-.caption .caps { font-size: 0.9em; letter-spacing: 0.04em; }
 
 /* --- portrait / narrow: stack it all up ------------------------ */
 
