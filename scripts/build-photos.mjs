@@ -66,14 +66,14 @@ function captionHtml(photo) {
 }
 
 function paneHtml(photo) {
-  const sizes = `(max-width: 46rem) 100vw, calc(82vh * ${photo.ratio})`;
+  const sizes = `(max-width: 46rem) 100vw, calc(85vh * ${photo.ratio})`;
   const caption = captionHtml(photo);
   return `  <figure class="pane pane--photo" style="--ratio:${photo.ratio}">
     <button class="frame" type="button" style="background-image:url(${photo.lqip})" aria-label="View ${escapeHtml(photo.alt)} larger">
       <img src="${photo.src}" srcset="${photo.srcset}" sizes="${sizes}"
            width="${photo.width}" height="${photo.height}" alt="${escapeHtml(photo.alt)}"
            loading="lazy" decoding="async">
-    </button>
+    </div>
     <figcaption class="caption">${caption}</figcaption>
   </figure>`;
 }
