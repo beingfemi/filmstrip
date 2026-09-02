@@ -8,22 +8,23 @@
   --img-size: 85vh;          /* the height every photo is printed at */
   --baseline: 1.5rem;
   --gap: calc(var(--baseline) / 2);
-  --fade-over: 300;          /* px of scroll before the intro is fully gone */
 
-  --paper: #fbfaf8;
-  --ink: #191817;
-  --muted: #6f6b66;
+  --fade-over: 200;          /* px of scroll before the description is gone */
+  --drift-over: 300;         /* px of scroll over which the pane rises 2rem */
+
+  --paper: #fefefe;
+  --ink: #222;
   --accent: #b4531f;
-  --edge: rgba(25, 24, 23, 0.12);
+  --edge: rgba(34, 34, 34, 0.14);
 }
 
+/* Light and dark are the same two colours, swapped. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #121211;
-    --ink: #f3f1ed;
-    --muted: #9a948c;
+    --paper: #222;
+    --ink: #fefefe;
     --accent: #e8935e;
-    --edge: rgba(243, 241, 237, 0.16);
+    --edge: rgba(254, 254, 254, 0.18);
   }
 }
 
@@ -58,12 +59,11 @@ body {
 
 a {
   color: inherit;
-  text-decoration-color: var(--edge);
   text-underline-offset: 0.2em;
-  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  transition: color 0.2s ease;
 }
 a:hover,
-a:focus-visible { color: var(--accent); text-decoration-color: currentColor; }
+a:focus-visible { color: var(--accent); }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
@@ -87,7 +87,10 @@ a:focus-visible { color: var(--accent); text-decoration-color: currentColor; }
   justify-content: center;
 }
 
-/* --- intro ----------------------------------------------------- */
+/* --- intro -----------------------------------------------------
+   The pane stays pinned to the left edge and rises a little as you
+   scroll away. The heading rides along and stays put; only the
+   description underneath fades, so it never sits over a photograph. */
 
 .pane--intro {
   width: 28rem;
@@ -97,22 +100,23 @@ a:focus-visible { color: var(--accent); text-decoration-color: currentColor; }
   justify-content: flex-start;
   padding-top: 0;
   z-index: 2;
-  /* Rises by up to 2rem and fades right out across the first 300px of
-     sideways scroll, so it never sits on top of a photograph.
-     --scroll-delta is the unitless scrollLeft, published by app.js. */
+  /* --scroll-delta is the unitless scrollLeft, published by app.js */
   transform: translateY(
-    calc(max(min(var(--scroll-delta, 0), var(--fade-over)) / var(--fade-over) * var(--baseline) * -2, -2rem))
+    calc(max(min(var(--scroll-delta, 0), var(--drift-over)) / var(--drift-over) * var(--baseline) * -2, -2rem))
   );
-  opacity: calc(1 - min(var(--scroll-delta, 0), var(--fade-over)) / var(--fade-over));
 }
 
-/* Invisible, so it shouldn't be catching clicks or the tab key. */
-.pane--intro.is-gone { pointer-events: none; visibility: hidden; }
-
 .wordmark { font-size: 1rem; font-weight: 600; letter-spacing: -0.01em; }
-.intro { margin-top: var(--baseline); color: var(--muted); }
+
+.intro {
+  margin-top: var(--baseline);
+  /* Goes negative past --fade-over; the browser clamps opacity at 0. */
+  opacity: calc((var(--fade-over) - var(--scroll-delta, 0)) / var(--fade-over));
+}
 .intro p { margin-top: var(--gap); max-width: 34ch; }
-.intro strong, .intro a { color: var(--ink); }
+
+/* Invisible, so it shouldn't be catching clicks or the tab key. */
+.intro.is-gone { pointer-events: none; visibility: hidden; }
 
 /* --- photos ---------------------------------------------------- */
 
@@ -144,7 +148,6 @@ a:focus-visible { color: var(--accent); text-decoration-color: currentColor; }
 .caption {
   margin-top: var(--gap);
   font-size: 0.8125rem;
-  color: var(--muted);
   font-variant-numeric: tabular-nums;
   max-width: calc(var(--img-size) * var(--ratio, 0.667));
 }
@@ -166,12 +169,11 @@ a:focus-visible { color: var(--accent); text-decoration-color: currentColor; }
   .pane--intro {
     position: static;
     width: auto;
-    /* it's a plain column here — no drifting, no fading */
-    transform: none;
-    opacity: 1;
+    transform: none;          /* it's a plain column here — no drifting */
     padding-bottom: var(--baseline);
   }
-  .pane--intro.is-gone { pointer-events: auto; visibility: visible; }
+  .intro { opacity: 1; }      /* and no fading */
+  .intro.is-gone { pointer-events: auto; visibility: visible; }
   .frame,
   .caption { width: 100%; max-width: 100%; }
   .frame { height: auto; aspect-ratio: var(--ratio, 0.667); }
